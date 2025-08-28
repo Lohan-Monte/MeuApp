@@ -7,12 +7,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<ImageView
-    android:id="@+id/imglogodicord"
-    android:scaleType="centerCrop"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:src="@drawable/logodiscord"/>
+    <ImageView
+        android:id="@+id/imglogodicord"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logodiscord" />
+
+    <ImageView
+        android:layout_below="@+id/imglogodicord"
+        android:id="@+id/imglogothreads"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logothreads" />
+
+    <ImageView
+        android:layout_below="@+id/imglogothreads"
+        android:id="@+id/imglogolinkedin"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logolinkedin" />
+
+    <ImageView
+        android:layout_below="@+id/imglogolinkedin"
+        android:id="@+id/imglogoreddit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logoreddit" />
 
 
 </RelativeLayout>
