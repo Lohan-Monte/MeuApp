@@ -5,17 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
+
     <ImageView
+        android:layout_centerInParent="true"
         android:id="@+id/imglogodicord"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/logodiscord" />
+        android:src="@drawable/logodiscord"
+        />
 
     <ImageView
-        android:layout_below="@+id/imglogodicord"
+        android:layout_toLeftOf="@id/imglogodicord"
+        android:layout_above="@id/imglogodicord"
         android:id="@+id/imglogothreads"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -23,7 +28,18 @@
         android:src="@drawable/logothreads" />
 
     <ImageView
-        android:layout_below="@+id/imglogothreads"
+        android:paddingLeft="18dp"
+        android:layout_toRightOf="@id/imglogodicord"
+        android:layout_above="@id/imglogodicord"
+        android:id="@+id/imglogowpp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logowpp" />
+
+    <ImageView
+        android:paddingRight="18dp"
+        android:layout_below="@id/imglogodicord"
         android:id="@+id/imglogolinkedin"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -31,12 +47,13 @@
         android:src="@drawable/logolinkedin" />
 
     <ImageView
-        android:layout_below="@+id/imglogolinkedin"
+        android:layout_toRightOf="@id/imglogodicord"
+        android:layout_below="@id/imglogodicord"
         android:id="@+id/imglogoreddit"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
         android:src="@drawable/logoreddit" />
 
-
 </RelativeLayout>
+
